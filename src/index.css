@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+
+@theme{
+    --font-pop: 'Poppins', sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.cardGrid{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+}
+
+/* Custom Toast Styles */
+.Toastify__toast {
+  background-color: #581c87 !important; /* purple-900 */
+  color: white !important;
+}
+
+.Toastify__toast--success {
+  background-color: #844dad !important; /* purple-900 */
+}
+
+.Toastify__toast--error {
+  background-color: #af0909 !important; /* purple-900 */
+}
+
+.Toastify__toast--warning {
+  background-color: #581c87 !important; /* purple-900 */
+}
+
+.Toastify__toast--info {
+  background-color: #581c87 !important; /* purple-900 */
+}
+
+/* Progress bar color */
+.Toastify__progress-bar {
+  background-color: #63f755 !important; /* purple-500 */
+}
+
+/* Close button color */
+.Toastify__close-button {
+  color: white !important;
+}
+
+/* Error toast icon color (SVG) */
+.Toastify__toast--error .Toastify__toast-icon svg {
+  fill: #22c55e !important;
+  color: #22c55e !important;
+}
